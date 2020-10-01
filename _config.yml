@@ -44,6 +44,9 @@ theme: minima
 plugins:
   - jekyll-feed
 
+include:
+  - CNAME
+
 exclude:
   - docs
   - scripts
