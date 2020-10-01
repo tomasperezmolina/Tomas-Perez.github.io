@@ -49,7 +49,7 @@ Thermal tracking dashboard for transportation of sensitive products. A device at
 
 Developed in a four person team, my role was to develop the software running on the tracking device. The device used was a Raspberry Pi running Python which connected to the data collection server through Amazon SQS.
 
-**Technologies**: Python, Raspberry Pi, Linux, Amazon SQS
+**Technologies**: Python, Raspberry Pi, Amazon SQS
 
 <a rel="me" href="https://github.com/Tomas-Perez/kelvin-pi" title="Kelvin IoT repository"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg></a>
 
