@@ -15,9 +15,9 @@
 # in the templates via {{ site.myvariable }}.
 
 author:
-  name: Tomas Perez Molina
+  name: Tomás Perez Molina
   email: tpm96.me@gmail.com
-title: Tomas Perez Molina
+title: Tomás Perez Molina
 description: >- 
   Personal website and blog.
 baseurl: "" # the subpath of your site, e.g. /blog

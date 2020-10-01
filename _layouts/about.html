@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    <div>
+      <div id="about-intro">
+        <div class="pic-wrapper">
+          <img src="/assets/me.jpg" alt="me" width="200"/>
+        </div>
+        <div>
+          <blockquote>
+            <p>
+              "{{ page.quote.quote | escape }}" - {{ page.quote.author | escape }}
+            </p>
+          </blockquote>
+          <p>Hello! I am Tomás (I have too many nicknames, let's not get into that).</p>
+
+          <p>Born and raised in Argentina, I am currently living in Milan pursuing my master's degree in Computer Science.</p>
+
+          <p>Up to now, my professional career is mainly comprised of front-end work, both for mobile and web applications. In total, I have accumulated 2 years of experience working with Angular, React and ReactNative.</p>
+        </div>
+      </div>
+    </div>
+    {{ content }}
+  </div>
+
+</article>
