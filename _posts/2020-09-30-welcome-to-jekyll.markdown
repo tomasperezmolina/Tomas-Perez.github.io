@@ -10,7 +10,7 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 Jekyll also offers powerful support for code snippets:
 
-```nasm
+{% highlight nasm linedivs %}
 jmp end
 start:
 pop rdi
@@ -20,7 +20,26 @@ mov rdx, rsi
 syscall
 end:
 call start
-```
+jmp end
+start:
+pop rdi
+mov rax, 0x3b
+lea rsi, [rdi + 0x7]
+mov rdx, rsi
+syscall
+end:
+call start
+jmp end
+start:
+pop rdi
+mov rax, 0x3b
+lea rsi, [rdi + 0x7]
+mov rdx, rsi
+syscall
+end:
+call start
+reeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeally long line
+{% endhighlight %}
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 

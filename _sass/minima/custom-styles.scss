@@ -1,2 +1,50 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+figure.highlight {
+    position: relative;
+
+    pre {
+        padding-left: 2.5em;
+        
+        code {
+            /* Use a counter to generate the line numbers */
+            counter-reset: code; 
+
+            &[data-lang]::before {
+                content: attr(data-lang);
+                background-color: $code-background-color;
+                position: absolute;
+                right: 35px;
+                top: -10px;
+                border: 1px solid gray;
+                border-radius: 3px;
+                padding: 0 7.5px;
+            }
+
+            div {
+                /* Increment the counter for each div */
+                counter-increment: code;
+
+                &:before {
+                    position: absolute;
+                    left: 0;
+                    background-color: $code-background-color;
+                    content: counter(code);
+
+                    /* Hacky, but necessary. Without these lines, single-digit line 
+                    /* numbers will not line up with double-digit ones. Change width
+                    /* to suit your font. */
+                    width: 16px;
+                    text-align: right;
+
+                    /* Add a nice border */
+                    display: inline-block;
+                    padding-right: 0.25em;
+                    padding-left: 0.75em;
+                    border-right: 1px solid gray;
+                }
+            }
+        }
+    }
+}

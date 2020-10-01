@@ -37,6 +37,9 @@ defaults:
 
 # Build settings
 markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+highlighter: rouge
 theme: minima
 plugins:
   - jekyll-feed
@@ -46,6 +49,7 @@ include:
 
 exclude:
   - docs
+  - scripts
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
