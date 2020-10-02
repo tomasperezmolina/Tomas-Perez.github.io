@@ -7,7 +7,7 @@ layout: default
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
 
-  <div class="post-content">
+  <div class="post-content about-content">
     <div>
       <div id="about-intro">
         <div class="pic-wrapper">
@@ -23,7 +23,13 @@ layout: default
 
           <p>Born and raised in Argentina, I am currently living in Milan pursuing my master's degree in Computer Science.</p>
 
-          <p>Up to now, my professional career is mainly comprised of front-end work, both for mobile and web applications. In total, I have accumulated 2 years of experience working with Angular, React and ReactNative.</p>
+          <p>I am always excited to try something different.</p>
+
+          <p><strong>Current interests: </strong> 
+            {%- for interest in page.current-interests -%}
+              {{ interest }}{% unless forloop.last %}, {% endunless %}
+            {%- endfor -%}
+          </p>
         </div>
       </div>
     </div>

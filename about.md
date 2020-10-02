@@ -5,7 +5,40 @@ permalink: /about/
 quote: 
     quote: Life is one big refactoring session
     author: Daniel Shiffman
+current-interests: 
+    - C/C++
+    - Binary exploitation
+    - HPC
+    - CUDA
 ---
+
+## Work experience
+
+Up to now, my professional career is mainly comprised of front-end work, both for mobile and web applications.
+
+### KumaVR SAS
+
+*September 2019 - February 2020*
+
+**Title:** Developer
+
+I was in charge of back-end design for an accounting dashboard web app. Later, during development I tackled some of the back-end, written in Kotlin and some of the front-end, written in Angular. 
+
+**Technologies:** Angular, Kotlin
+
+### Sirius Software SAS
+
+*March 2018 - May 2019*
+
+**Title:** Developer
+
+My initial focus was on Angular web apps. I worked in a variety of projects with this framework as a front-end developer.
+
+After around one year, I shifted to mobile app development where I started working with ReactNative, or alternatively, React + Cordova.
+
+I also did some minor work with static web pages and React web apps.
+
+**Technologies:** Angular, React, ReactNative
 
 ## Personal and university projects
 
@@ -31,6 +64,20 @@ Out of the three people in the team, I was in charge of handling the connection 
 
 <a rel="me" href="https://github.com/Tomas-Perez/service-composition" title="Service composition repository"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg></a>
 
+### Pandemic
+
+Simulator of the spread of diseases throughout Argentina. The user is able to input variables describing the disease, as well as a starting location for patient zero. The evolution of the disease can be visualized in a color coded map and also through multiple graphs that can be set at the department, province or national level. 
+
+Intradepartmental infections are simulated through a [comparmental epidemiological model](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology) (SIR / SIS) and infections between departments are determined based on the concentration of infected and distances between departments.
+
+The project was written in Angular and runs on top of Electron, in order to function as a local application. Leveraging the power of RxJS streams, all components are updated on demand at each frame in the simulation. Playback of the simulation can easily be controlled with a timeline and control panel, similar to a video player.
+
+As part of a five person team, I was the main project manager and architect. I was also responsible for the coordination between the reactive components and the simulation loop, as well as the loop itself.
+
+**Technologies**: Angular, D3.js, Electron, RxJS
+
+*Note: due to an NDA I am not able to share the project repository.*
+
 ### SafeStreets
 
 Mobile application allowing citizens to report traffic violations. A user is able to take a picture of a car and make a report describing the situation. It is also possible to view the location of reports on a city map. From the picture the server is able to determine the license plate of the car, in the case of a problem in the detection the picture is sent to random users to verify.
@@ -49,7 +96,7 @@ Thermal tracking dashboard for transportation of sensitive products. A device at
 
 Developed in a four person team, my role was to develop the software running on the tracking device. The device used was a Raspberry Pi running Python which connected to the data collection server through Amazon SQS.
 
-**Technologies**: Python, Raspberry Pi, Amazon SQS
+**Technologies**: Python, Raspberry Pi, Amazon SQS, MongoDB
 
 <a rel="me" href="https://github.com/Tomas-Perez/kelvin-pi" title="Kelvin IoT repository"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg></a>
 
@@ -72,4 +119,3 @@ The project was tackled with two people. I was in charge of developing the backe
 **Technologies**: Java, Jersey, Websockets, Hibernate, HSQLDB
 
 <a rel="me" href="https://github.com/Tomas-Perez/lfg" title="LFG repository"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg></a>
-
