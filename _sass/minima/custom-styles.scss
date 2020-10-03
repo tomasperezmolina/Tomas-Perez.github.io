@@ -4,9 +4,7 @@
 figure.highlight {
     position: relative;
 
-    pre {
-        padding-left: 2.5em;
-        
+    pre {        
         code {
             /* Use a counter to generate the line numbers */
             counter-reset: code; 
@@ -27,10 +25,8 @@ figure.highlight {
                 counter-increment: code;
 
                 &:before {
-                    position: absolute;
-                    left: 0;
                     background-color: $code-background-color;
-                    content: counter(code);
+                    content: counter(code, decimal-leading-zero);
 
                     /* Hacky, but necessary. Without these lines, single-digit line 
                     /* numbers will not line up with double-digit ones. Change width
@@ -41,7 +37,7 @@ figure.highlight {
                     /* Add a nice border */
                     display: inline-block;
                     padding-right: 0.25em;
-                    padding-left: 0.75em;
+                    margin-right: 0.5em;
                     border-right: 1px solid gray;
                 }
             }
